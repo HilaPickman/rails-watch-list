@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row pt-4">
+    <div class="col-sm-6">
+      <h2>Create List</h2>
+      <div class="mt-4 mb-4">
+        <%= simple_form_for(@list) do |f| %>
+          <%= f.input :name %>
+
+         <%= f.submit 'Add list', class: "btn btn-primary" %>
+        <% end %>
+      </div>
+      <hr/>
+      <%= link_to '<i class="fa-regular fa-arrow-left"></i> Back to list'.html_safe, lists_path, :class => "text-decoration-none" %>
+    </div>
+  </div>
+</div>

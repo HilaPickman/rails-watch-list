@@ -1,0 +1,9 @@
+<div class="container pt-4">
+<div class="d-flex flex-row justify-content-between align-items-center">
+  <div class = "p-2"><h1><%= @list.name %></h1></div>
+  <hr/>
+
+  <%= link_to '<i class="fa-regular fa-arrow-left"></i> Back to list'.html_safe, lists_path, :class => "text-decoration-none" %>
+  <%# <%= link_to '<i class="fa-regular fa-arrow-left"></i> Add a movie'.html_safe, new_list_bookmark_path, :class => "text-decoration-none" %>
+
+</div>
